@@ -54,6 +54,7 @@
       "pages": [
         "introduction",
         "installation",
+        "admin-panel",
         "system-requirements",
         "quickstart",
         "development"
