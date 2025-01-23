@@ -53,6 +53,8 @@
       "group": "Get Started",
       "pages": [
         "introduction",
+        "installation",
+        "system-requirements",
         "quickstart",
         "development"
       ]

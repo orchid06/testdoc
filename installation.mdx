@@ -1,0 +1,82 @@
+## Local Installation
+
+You can easily install BeePost on your local development environment using popular tools like XAMPP, WAMP, LAMP, or Laragon. Follow these steps to set up the software locally:
+
+**Database Setup**
+
+<Steps>
+  <Step title="Start Laragon">
+    Open the XAMPP Control Panel. You can do this by searching for "XAMPP Control Panel" and running it as an administrator.
+
+    <img
+        className="block"
+        src="/images/start_xampp.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Start Apache and MySQL">
+    In the XAMPP Control Panel, click the "Start" button next to "Apache" and "MySQL." This will start the Apache web server and MySQL database server.
+
+    <img
+        className="block"
+        src="/images/start_xampp.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Access phpMyAdmin">
+    Open your web browser and type the following URL into the address bar: http://localhost/phpmyadmin/
+  </Step>
+  <Step title="Login to phpMyAdmin">
+    You will be taken to the phpMyAdmin login page. Log in with the default credentials:
+    <ul>
+      <li>Username: root</li>
+      <li>Password: (Leave this field empty)</li>
+    </ul>
+    Note: If you've set a password for MySQL during XAMPP installation or later, use that password instead of leaving it empty.
+
+    <img
+        className="block"
+        src="/images/access_php.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Create a New Database">
+    On the phpMyAdmin dashboard, click on the "Databases" tab located at the top. In the "Create database" section, enter a name for your new database in the "Database name" field. Choose the appropriate collation (usually, you can leave it as the default). Click the "Create" button.
+
+    <img
+        className="block"
+        src="/images/new_database.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Confirmation">
+    You will receive a confirmation message indicating that the database has been created successfully.
+  </Step>
+</Steps>
+
+<Note> Please note down the Database Username, Database Name, Database Host, and Database Password for a later part of this installation process.</Note>
+
+**File Setup for Your Application**
+
+After downloading the application zip file from Codecanyon, follow these steps to set up your files in the right location:
+
+<Steps>
+  <Step title="Download and Unzip">
+    Start by downloading the application zip file from your source (e.g., Codecanyon). Once downloaded, unzip the main application package to access its contents.
+  </Step>
+  <Step title="Locate Installer Zip">
+    Within the unzipped folder, look for the installer zip file. This zip file typically contains all the necessary files for installing and setting up your application.
+  </Step>
+  <Step title="Extract to Project Directory">
+    Unzip the installer zip file into your project directory or the root directory of your web server. This step ensures that your application files are correctly placed and organized for installation.
+
+    <img
+        className="block"
+        src="/images/project_dir.png"
+        alt="Start Xampp"
+    />
+  </Step>
+</Steps>
+
+## cPanel installation
+
