@@ -10,7 +10,7 @@ You can easily install BeePost on your local development environment using popul
 
     <img
         className="block"
-        src="/images/start_xampp.png"
+        src="/images/local_install/start_xampp.png"
         alt="Start Xampp"
     />
   </Step>
@@ -19,7 +19,7 @@ You can easily install BeePost on your local development environment using popul
 
     <img
         className="block"
-        src="/images/start_xampp.png"
+        src="/images/local_install/start_xampp.png"
         alt="Start Xampp"
     />
   </Step>
@@ -36,7 +36,7 @@ You can easily install BeePost on your local development environment using popul
 
     <img
         className="block"
-        src="/images/access_php.png"
+        src="/images/local_install/access_php.png"
         alt="Start Xampp"
     />
   </Step>
@@ -45,7 +45,7 @@ You can easily install BeePost on your local development environment using popul
 
     <img
         className="block"
-        src="/images/new_database.png"
+        src="/images/local_install/new_database.png"
         alt="Start Xampp"
     />
   </Step>
@@ -72,11 +72,135 @@ After downloading the application zip file from Codecanyon, follow these steps t
 
     <img
         className="block"
-        src="/images/project_dir.png"
+        src="/images/local_install/project_dir.png"
         alt="Start Xampp"
     />
   </Step>
 </Steps>
 
-## cPanel installation
+## cPanel Configuration
+
+<Steps>
+  <Step title="Access cPanel">
+    Log in to your cPanel hosting account. You can typically access cPanel by navigating to your hosting provider's website and logging in with your credentials.
+
+    <img
+        className="block"
+        src="/images/cPanel_install/cPanel.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Database Setup">
+    - Return to cPanel's main dashboard and find the "MySQL Database Wizard" or "MySQL Databases" option.  
+    - Create a new database for BeePost and take note of the database name, username, and password you set during this process.  
+
+    <img
+        className="block"
+        src="/images/cPanel_install/database.png"
+        alt="Start Xampp"
+    />
+
+    <img
+        className="block"
+        src="/images/cPanel_install/database_2.png"
+        alt="Start Xampp"
+    />
+
+    <img
+        className="block"
+        src="/images/cPanel_install/database_3.png"
+        alt="Start Xampp"
+    />
+
+    <Note>Please note the Database Username, Database Name, Database Host, and Database Password for a later part of this installation process.</Note>
+
+  </Step>
+  <Step title="File Setup for Your Application">
+    - Once inside cPanel, look for the "File Manager" icon or option. Click on it to access your website's files. 
+
+    <img
+        className="block"
+        src="/images/cPanel_install/file.png"
+        alt="Start Xampp"
+    /> 
+    - Navigate to the <code>public_html</code> directory (or a sub-directory if you prefer, such as "BeePost") and click on it.
+
+    <img
+        className="block"
+        src="/images/cPanel_install/file_2.png"
+        alt="Start Xampp"
+    />  
+    - Use the "Upload" option to upload the BeePost application zip file from your computer into this directory.
+    
+    <img
+        className="block"
+        src="/images/cPanel_install/file_3.png"
+        alt="Start Xampp"
+    /> 
+    - Once the upload is complete, select the zip file and choose "Extract" to unzip its contents.  
+
+    <img
+        className="block"
+        src="/images/cPanel_install/extract.png"
+        alt="Start Xampp"
+    />
+  </Step>
+</Steps>
+
+## Installation Process
+After successfully configuring your server, whether it's a local environment or cPanel hosting, you are now ready to proceed with the application installation. Simply follow the instructions provided below to seamlessly set up the application on your system:
+
+<Steps>
+  <Step title="Step 1: Access Installer">
+    - Access the installation script through your web browser (e.g., <code>http://localhost/BeePost</code> or <code>https://yourdomainname.com</code>) and follow the on-screen instructions to complete the setup.
+
+    <img
+        className="block"
+        src="/images/install_step/installation.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Step 2: Permissions & Requirements">
+    - Assign necessary permissions to ensure that the application can execute operations smoothly within your system's setup directory.
+
+    <img
+        className="block"
+        src="/images/install_step/permission.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Step 3: Database Setup">
+    - Enter the correct database name, database user, and password that you previously created.
+
+    <img
+        className="block"
+        src="/images/install_step/database_setup.png"
+        alt="Start Xampp"
+    />
+  </Step>
+  <Step title="Step 4: Account Setup">
+    - Establish your admin access credentials, including the username needed for logging into the admin panel upon successful installation.  
+    - Afterward, click the "Import" button to initiate the database import as part of the installation process.  
+
+    <img
+        className="block"
+        src="/images/install_step/account_setup.png"
+        alt="Start Xampp"
+    />
+    <Warning> The "Force Import" button is intended for forcefully importing the database into an existing non-empty database. Please exercise caution, as this action may overwrite or delete your existing data.</Warning>
+  </Step>
+  <Step title="Step 5: Installation Completed Successfully">
+    - Congratulations! The installation has been successfully completed. You can now access your admin panel for this application.  
+    - For further configuration of the application's internal settings, please refer to the additional instructions provided in this documentation.
+
+    <img
+        className="block"
+        src="/images/install_step/install_complete.png"
+        alt="Start Xampp"
+    />
+  </Step>
+</Steps>
+
+
+
 
